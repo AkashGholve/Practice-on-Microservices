@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: PUserService
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices_d_practice
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true  # Formats the SQL logs
+        # Additional settings can be added here for more Hibernate configuration
+
+server:
+  port: 8081
